@@ -1,0 +1,331 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Franchise & Dealership Expo - Ticket HTML Form</title>
+
+    <!-- CSS FILES -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;400;700&display=swap" rel="stylesheet">
+
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <link href="css/bootstrap-icons.css" rel="stylesheet">
+
+    <link href="css/templatemo-festava-live.css" rel="stylesheet">
+
+    <link rel="icon" href="images/logo.png">
+
+
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/8.4.6/css/intlTelInput.css" rel="stylesheet">
+    <style>
+        .intl-tel-input {
+            display: block;
+            width: 100%;
+        }
+
+        .intl-tel-input .selected-flag {
+            z-index: 4;
+        }
+
+        .intl-tel-input .country-list {
+            z-index: 5;
+        }
+
+        .input-group .intl-tel-input .form-control {
+            border-top-left-radius: 4px;
+            border-top-right-radius: 0;
+            border-bottom-left-radius: 4px;
+            border-bottom-right-radius: 0;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <main>
+
+        <header class="site-header">
+            <div class="container">
+                <div class="row">
+
+                    <div class="col-lg-12 col-12 d-flex flex-wrap">
+                        <p class="d-flex me-4 mb-0">
+                            <i class="bi-person custom-icon me-2"></i>
+                            <strong class="text-dark">Welcome to Franchise & Dealership Expo 2023</strong>
+                        </p>
+                    </div>
+
+                </div>
+            </div>
+        </header>
+
+
+        <nav class="navbar navbar-expand-lg bg-dark">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">
+                    <img style="border-radius:35px" width="70px" height="70px" src="images/logo.png">
+                </a>
+
+                <a href="ticket.html" class="btn custom-btn d-lg-none ms-auto me-4">Register Now</a>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav align-items-lg-center ms-auto me-lg-5">
+                        <li class="nav-item">
+                            <a class="nav-link click-scroll" href="index.html#section_1">Home</a>
+                        </li>
+
+                        <!-- <li class="nav-item">
+                            <a class="nav-link click-scroll" href="index.html#section_2">About</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link click-scroll" href="index.html#section_3">Artists</a>
+                        </li> -->
+
+                        <li class="nav-item">
+                            <a class="nav-link click-scroll" href="index.html#section_4">Schedule</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link click-scroll" href="index.html#section_5">Who Exhibits</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link click-scroll" href="index.html#section_6">Contact</a>
+                        </li>
+                    </ul>
+
+                    <a href="ticket.html" class="btn custom-btn d-lg-block d-none">Register Now</a>
+                </div>
+            </div>
+        </nav>
+
+
+        <section class="ticket-section section-padding id='section_6'">
+
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-12 mx-auto">
+                        <!-- <div class="tab-content shadow-lg mt-5" id="nav-tabContent"> -->
+
+                        <div class="col-lg-8 col-12 mx-auto">
+                            <!-- Registration Form By Mohammed Mushahid Ali -->
+                            <div
+                                style="border-radius:6px;background-color:white;top:0%;right:-33%;border:1px solid white;padding:20px;">
+                                <h3 style="display:inline;color:#1a88b2;"><b>REGISTER NOW</b></h3>
+                                <hr style="margin: 10px -20px 20px;border: 0;border-top: 1px solid grey;">
+                                <div>
+                                    <!-- DONE BY MOHAMMED MUSHAHID ALI -->
+                                    <form name="regForm">
+                                        <input type="text" name="contact-name" id="contact-name" class="form-control"
+                                            placeholder="Full name" required><br>
+                                        <input type="email" name="contact-email" id="contact-email"
+                                            pattern="[^ @]*@[^ @]*" class="form-control" placeholder="Email address"
+                                            required><br>
+                                        <div style="display:block;width: 100%;">
+                                            <input type="number" name="contact-number" id="contact-number"
+                                                class="form-control" placeholder="Mobile Number" required
+                                                onkeypress="if(this.value.length==10) return false;"
+                                                onpaste="return false">
+                                        </div><br>
+                                        <input type="text" name="your-city" id="your-city" class="form-control"
+                                            placeholder="Your CITY" required><br>
+                                        <input type="number" name="your-pin" id="your-pin" class="form-control"
+                                            placeholder="Your Postal Index Number (PIN) code"
+                                            onkeypress="if(this.value.length==6) return false;" onpaste="return false"
+                                            required><br>
+                                        <select name="city" class="form-control" id="city" required>
+                                        <optgroup>
+                                            
+                                            <option selected disabled>Choose EXPO</option>
+                                            <option value="Hyderabad">Hyderabad</option>
+                                            <option value="Kochi">Kochi</option>
+                                            </optgroup>
+                                        </select>
+                                        <select name="type-user" class="form-control" id="user"
+                                            style="margin-top:20px;padding:0.37rem;width:100%"
+                                            style="margin-top:20px;padding:0.37rem;width:100%"
+                                            onchange="checkuser(this)" required>
+                                        <optgroup>
+
+                                            <option value="visitor" disabled selected>Register As</option>
+                                            <option value="visitor">Visitor</option>
+                                            <option value="exhibitor">Exhibitor</option>
+                                            </optgroup>
+                                        </select>
+                                        <div id="innercontainer">
+                                        </div>
+                                        <input onmouseover="change(this)" onmouseout="revert(this)" name="submit"
+                                            type="button" value="SUBMIT" onclick="postData()"
+                                            style="margin-top:10px;padding:20px;width:100%;background-color:#1a88b2;color:white;border:1px solid #1a88b2;border-radius:5px;">
+                                    </form>
+                                    <div class="alert alert-success mt-4" role="alert" id="success-alert" style="display: none;">
+                                        Registered Successfully! Thank You!
+                                    </div>
+                                      
+                                </div>
+                            </div>
+                        </div>
+                        <!-- </div> -->
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+
+    <footer class="site-footer">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-lg-6 col-12 mb-4 pb-2">
+                    <h5 class="site-footer-title mb-3">Links</h5>
+
+                    <ul class="site-footer-links">
+                        <li class="site-footer-link-item">
+                            <a href="#" class="site-footer-link">Home</a>
+                        </li>
+
+                        <li class="site-footer-link-item">
+                            <a href="#" class="site-footer-link">About</a>
+                        </li>
+
+                        <li class="site-footer-link-item">
+                            <a href="#" class="site-footer-link">Event Floor Plan</a>
+                        </li>
+
+                        <li class="site-footer-link-item">
+                            <a href="#" class="site-footer-link">Expo Calender</a>
+                        </li>
+
+                        <li class="site-footer-link-item">
+                            <a href="#" class="site-footer-link">Who Exhibits</a>
+                        </li>
+
+                        <li class="site-footer-link-item">
+                            <a href="#" class="site-footer-link">Contact</a>
+                        </li>
+                    </ul><br>
+                    <div style="display:flex;gap:5%;"><br><img style="border-radius:35px" width="70px" height="70px"
+                            src="images/logo.png"><img style="border-radius:35px" width="70px" height="70px"
+                            src="images/iman.png"><img style="border-radius:35px" width="70px" height="70px"
+                            src="images/masjid-one-movement.png"></div>
+                </div>
+
+                <div class="col-lg-3 col-md-6 col-12 mb-4 mb-lg-0">
+                    <h5 class="site-footer-title mb-3">Have a Question?</h5>
+
+                    <p class="text-white d-flex mb-1" style="word-spacing: 10px;">
+                        <a href="tel:+91 990-297-9079" class="site-footer-link">
+                            +91 99029 79079
+                        </a>
+                    </p>
+
+                    <p class="text-white d-flex">
+                        <a href="mailto:info@aimdcexpo.com" class="site-footer-link">
+                            info@aimdcexpo.com
+                        </a>
+                    </p>
+                    <p class="text-white d-flex">
+                    <h5 class="site-footer-title mb-3">IT Partner</h5>
+                    <a href="https://fullstackacademy.in/courses-home/" class="site-footer-link">
+                        Full Stack Academy Hyderabad
+                    </a>
+                    </p>
+                </div>
+
+                <div class="col-lg-3 col-md-6 col-11 mb-4 mb-lg-0 mb-md-0">
+                    <h5 class="site-footer-title mb-3">Venue of Hyderabad Expo</h5>
+
+                    <p class="text-white d-flex" style="font-size: medium;">
+                        METRO CONVENTION, <br> #6-3-200,Aramghar, Airport Road, Hyderabad, Telangana 500052
+                    </p>
+
+                    <a class="link-fx-1 color-contrast-higher mt-3" href="https://goo.gl/maps/zri1RHjY6CrQkbhDA">
+                        <span>Our Maps</span>
+                        <svg class="icon" viewBox="0 0 32 32" aria-hidden="true">
+                            <g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round">
+                                <circle cx="16" cy="16" r="15.5"></circle>
+                                <line x1="10" y1="18" x2="16" y2="12"></line>
+                                <line x1="16" y1="12" x2="22" y2="18"></line>
+                            </g>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div style="margin-top: 0px;" class="site-footer-bottom">
+            <div class="container">
+                <div class="row">
+
+                    <div class="col-lg-3 col-12 mt-5">
+                        <p class="copyright-text">Copyright © 2023 Franchise & Dealership Expo</p>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!--
+
+T e m p l a t e M o
+
+-->
+    <!-- JAVASCRIPT FILES -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.sticky.js"></script>
+    <script src="js/custom.js"></script>
+    <script src="js/validate.js"></script>
+    <script src="js/form.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/8.4.7/js/intlTelInput.js"></script>
+    <script>
+        $("#contact-number").intlTelInput({
+            // allowDropdown: false,
+            // autoHideDialCode: false,
+            // autoPlaceholder: "off",
+            // dropdownContainer: document.body,
+            excludeCountries: ["il"],
+            // formatOnDisplay: false,
+            geoIpLookup: function (callback) {
+                $.get("http://ipinfo.io", function () { }, "jsonp").always(function (resp) {
+                    var countryCode = (resp && resp.country) ? resp.country : "";
+                    callback(countryCode);
+                });
+            },
+            // hiddenInput: "full_number",
+            initialCountry: "auto",
+            // localizedCountries: { 'de': 'Deutschland' },
+            // nationalMode: false,
+            // onlyCountries: ['us', 'gb', 'ch', 'ca', 'do'],
+            // placeholderNumberType: "MOBILE",
+            preferredCountries: ['cn', 'pk'],
+            separateDialCode: true,
+            utilsScript: "https://raw.githack.com/jackocnr/intl-tel-input/master/build/js/utils.js",
+        });
+    </script>
+
+</body>
+
+</html>
