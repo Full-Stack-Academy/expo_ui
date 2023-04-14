@@ -1,89 +1,694 @@
-<!DOCTYPE html>
-<html>
-  <head>
+<!doctype html>
+<html lang="en">
+
+<head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Welcome to Firebase Hosting</title>
 
-    <!-- update the version number as needed -->
-    <script defer src="/__/firebase/9.19.1/firebase-app-compat.js"></script>
-    <!-- include only the Firebase features as you need -->
-    <script defer src="/__/firebase/9.19.1/firebase-auth-compat.js"></script>
-    <script defer src="/__/firebase/9.19.1/firebase-database-compat.js"></script>
-    <script defer src="/__/firebase/9.19.1/firebase-firestore-compat.js"></script>
-    <script defer src="/__/firebase/9.19.1/firebase-functions-compat.js"></script>
-    <script defer src="/__/firebase/9.19.1/firebase-messaging-compat.js"></script>
-    <script defer src="/__/firebase/9.19.1/firebase-storage-compat.js"></script>
-    <script defer src="/__/firebase/9.19.1/firebase-analytics-compat.js"></script>
-    <script defer src="/__/firebase/9.19.1/firebase-remote-config-compat.js"></script>
-    <script defer src="/__/firebase/9.19.1/firebase-performance-compat.js"></script>
-    <!-- 
-      initialize the SDK after all desired features are loaded, set useEmulator to false
-      to avoid connecting the SDK to running emulators.
-    -->
-    <script defer src="/__/firebase/init.js?useEmulator=true"></script>
+    <meta name="description" content="">
+    <meta name="author" content="">
 
-    <style media="screen">
-      body { background: #ECEFF1; color: rgba(0,0,0,0.87); font-family: Roboto, Helvetica, Arial, sans-serif; margin: 0; padding: 0; }
-      #message { background: white; max-width: 360px; margin: 100px auto 16px; padding: 32px 24px; border-radius: 3px; }
-      #message h2 { color: #ffa100; font-weight: bold; font-size: 16px; margin: 0 0 8px; }
-      #message h1 { font-size: 22px; font-weight: 300; color: rgba(0,0,0,0.6); margin: 0 0 16px;}
-      #message p { line-height: 140%; margin: 16px 0 24px; font-size: 14px; }
-      #message a { display: block; text-align: center; background: #039be5; text-transform: uppercase; text-decoration: none; color: white; padding: 16px; border-radius: 4px; }
-      #message, #message a { box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24); }
-      #load { color: rgba(0,0,0,0.4); text-align: center; font-size: 13px; }
-      @media (max-width: 600px) {
-        body, #message { margin-top: 0; background: white; box-shadow: none; }
-        body { border-top: 16px solid #ffa100; }
-      }
-    </style>
-  </head>
-  <body>
-    <div id="message">
-      <h2>Welcome</h2>
-      <h1>Firebase Hosting Setup Complete</h1>
-      <p>You're seeing this because you've successfully setup Firebase Hosting. Now it's time to go build something extraordinary!</p>
-      <a target="_blank" href="https://firebase.google.com/docs/hosting/">Open Hosting Documentation</a>
-    </div>
-    <p id="load">Firebase SDK Loading&hellip;</p>
+    <title>Franchise & Dealership Expo 2023</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-    <script>
-      document.addEventListener('DOMContentLoaded', function() {
-        const loadEl = document.querySelector('#load');
-        // // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
-        // // The Firebase SDK is initialized and available here!
-        //
-        // firebase.auth().onAuthStateChanged(user => { });
-        // firebase.database().ref('/path/to/ref').on('value', snapshot => { });
-        // firebase.firestore().doc('/foo/bar').get().then(() => { });
-        // firebase.functions().httpsCallable('yourFunction')().then(() => { });
-        // firebase.messaging().requestPermission().then(() => { });
-        // firebase.storage().ref('/path/to/ref').getDownloadURL().then(() => { });
-        // firebase.analytics(); // call to activate
-        // firebase.analytics().logEvent('tutorial_completed');
-        // firebase.performance(); // call to activate
-        //
-        // // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
+    <!-- CSS FILES -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
 
-        try {
-          let app = firebase.app();
-          let features = [
-            'auth', 
-            'database', 
-            'firestore',
-            'functions',
-            'messaging', 
-            'storage', 
-            'analytics', 
-            'remoteConfig',
-            'performance',
-          ].filter(feature => typeof app[feature] === 'function');
-          loadEl.textContent = `Firebase SDK loaded with ${features.join(', ')}`;
-        } catch (e) {
-          console.error(e);
-          loadEl.textContent = 'Error loading the Firebase SDK, check the console.';
-        }
-      });
-    </script>
-  </body>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;400;700&display=swap" rel="stylesheet">
+
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <link href="css/bootstrap-icons.css" rel="stylesheet">
+
+    <link href="css/templatemo-festava-live.css" rel="stylesheet">
+
+    <link rel="icon" href="images/logo.png">
+
+    <link rel="icon" href="images/logo.png">
+
+
+    <!--
+
+TemplateMo 583 Festava Live
+
+https://templatemo.com/tm-583-festava-live
+
+-->
+</head>
+
+<body>
+
+    <main>
+
+        <header class="site-header">
+            <div class="container">
+                <div class="row">
+
+                    <div class="col-lg-12 col-12 d-flex flex-wrap">
+                        <p class="d-flex me-4 mb-0">
+                            <i class="bi-person custom-icon me-2"></i>
+                            <strong class="text-dark">Welcome to Franchise & Dealership Expo 2023</strong>
+                        </p>
+                    </div>
+
+                </div>
+            </div>
+        </header>
+
+
+        <nav class="navbar navbar-expand-lg">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">
+                    <img style="border-radius:35px" width="70px" height="70px" src="images/logo.png">
+                </a>
+
+                <a href="ticket.html" class="btn custom-btn d-lg-none ms-auto me-4">Register Now</a>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav align-items-lg-center ms-auto me-lg-5">
+                        <li class="nav-item">
+                            <a class="nav-link click-scroll" href="#section_1">Home</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link click-scroll" href="#section_2">About</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link click-scroll" href="#section_3">Floor Plan</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link click-scroll" href="#section_4">Expo Calender</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link click-scroll" href="#section_5">Who Exhibits</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link click-scroll" href="#section_6">Contact</a>
+                        </li>
+                    </ul>
+
+                    <a href="ticket.html" class="btn custom-btn d-lg-block d-none">Register Now</a>
+                </div>
+            </div>
+        </nav>
+
+
+        <section class="hero-section" id="section_1">
+            <div class="section-overlay"></div>
+
+            <div class="container d-flex justify-content-center align-items-center">
+                <div class="row">
+
+                    <div class="col-12 mt-auto mb-5 text-center">
+                        <h1 class="text-white mb-5">FRANCHISE<br><span style="color: darkcyan;">& </span>DEALERSHIP
+                            <div class="expo">
+                                <span style="color:fuchsia; font-size: 150%;">E</span><span
+                                    style="color: orange;font-size: 150%; ">X</span><span
+                                    style="color: darkcyan; font-size: 150%;">P</span><span
+                                    style="color: white; font-size: 150%;">O</span>
+                            </div>
+                        </h1>
+                        <div class="marg0">
+                            <h5 class="text-white mb-5">INDIA'S BIGGEST BUSINESS OPPORTUNITY</h5>
+                        </div>
+                        <div class="marg1">
+                            <a class="btn custom-btn smoothscroll" href="#section_2">Let's begin</a>
+                        </div>
+
+
+                    </div>
+
+                    <div class="marg">
+
+                        <div class="col-lg-12 col-12 mt-auto d-flex flex-column flex-lg-row text-center">
+                            <div class="date-wrap">
+                                <h5 class="text-white">
+                                    <i class="custom-icon bi-clock me-2"></i>
+                                    20 - 21<sup>st</sup>, May 2023
+                                </h5>
+                            </div>
+
+                            <div class="location-wrap mx-auto py-3 py-lg-0">
+                                <h5 class="text-white">
+                                    <i class="custom-icon bi-geo-alt me-2"></i>
+                                    METRO CONVENTION, Airport Road, Aramghar, Hyderabad
+                                </h5>
+                            </div>
+
+                            <div class="social-share">
+                                <ul class="social-icon d-flex align-items-center justify-content-center">
+                                    <span class="text-white me-3">Share:</span>
+
+                                    <li class="social-icon-item">
+                                        <a href="#" class="social-icon-link">
+                                            <span class="bi-facebook"></span>
+                                        </a>
+                                    </li>
+
+                                    <li class="social-icon-item">
+                                        <a href="#" class="social-icon-link">
+                                            <span class="bi-twitter"></span>
+                                        </a>
+                                    </li>
+
+                                    <li class="social-icon-item">
+                                        <a href="#" class="social-icon-link">
+                                            <span class="bi-instagram"></span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="video-wrap">
+                <!-- <video autoplay="" loop="" muted="" class="custom-video" poster="">
+                    <source src="video/pexels-2022395.mp4" type="video/mp4">
+
+                    Your browser does not support the image tag.
+                </video> -->
+                <!-- <img style="object-fit:cover;" src="images/Charminar.jpg" class="custom-video" alt="cityId"
+                    style="width: 100%; height: 100%;"> -->
+                    <video src="charminar.mp4" class="custom-video" autoplay muted loop></video>
+            </div>
+        </section>
+
+
+        <section class="about-section section-padding" id="section_2">
+            <div class="container">
+                <div class="row">
+
+                    <div class="col-lg-6 col-12 mb-4 mb-lg-0 d-flex align-items-center">
+                        <div class="services-info">
+                            <h2 class="text-white mb-4">About Expo 2023</h2>
+
+                            <p class="text-white">Is a platform for Entrepreneurs and Business ownership to Explore
+                                Various Franchies and Dealership Opportunities and build Their Business by partnering
+                                with Established Brands.</p>
+
+                            <h6 class="text-white mt-4">Discover</h6>
+
+                            <p class="text-white">Discover Marketing and Branding Resources to help you Promote your
+                                Franchise or Dealership.</p>
+
+                            <h6 class="text-white mt-4">Network & Connect</h6>
+
+                            <p class="text-white">Network with Potential Partners, Mentor, and Investors to help Grow
+                                your Business. Connect with Industry Experts, Successful Franchise and Dealership
+                                Owners, and fellow Entrepreneurs.</p>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-6 col-12">
+                        <div class="about-text-wrap">
+                            <img src="images/metro con.jpg" class="about-image img-fluid">
+
+                            <div class="about-text-info d-flex">
+                                <div class="d-flex">
+                                    <i class="about-text-icon bi-person"></i>
+                                </div>
+
+
+                                <div class="ms-4">
+                                    <h3>Dealership and Franchise EXPO - Hyderabad Venue</h3>
+
+                                    <p class="mb-0">your amazing festival experience with us</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+
+        <section class="artists-section section-padding" id="section_3">
+            <div class="container">
+                <div class="row justify-content-center">
+
+                    <div class="col-12 text-center">
+                        <h2 class="mb-4">Event Floor Plan</h1>
+                            <p>Finding your perfect dealership match. Our team of experts will help you navigate the
+                                world of dealership ownership and connect you with the opportunities that are right for
+                                you at the Franchise and Dealership Expo.</p>
+                    </div>
+
+                    <div class="col-lg-5 col-12">
+                        <div class="artists-thumb">
+                            <div class="artists-image-wrap">
+                                <img src="images/Hyderabad Floor Plan.png" class="artists-image img-fluid">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Download Brochure -->
+
+        <div class="site-footer-top">
+            <div class="container">
+                <div class="row">
+
+                    <div class="col-lg-6 col-12">
+                        <h2 class="text-white mb-lg-0">Hyderabad EXPO Brochure</h2>
+                    </div>
+
+                    <div class="col-lg-6 col-12 d-flex justify-content-lg-end align-items-center">
+                        <a href="Hyderabad Expo.pdf" class="btn custom-btn-dark d-lg-block d-none">Download</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <section class="schedule-section section-padding" id="section_4">
+            <div class="container">
+                <div class="row">
+                    <!--******** DONE BY MOHAMMED MUSHAHID ALI *******-->
+                    <div class="col-12 text-center">
+                        <h1 class="text-dark mb-4">Expo Calendar</h1><br>
+                        <p class="text-dark fs-2">AIMDC organizes India’s Biggest Franchise & Dealership Expos, designed
+                            to drive new
+                            business, business to business (B2B) relationships and Networking conversations for
+                            channel partnerships!</p><br>
+
+                        <div class="">
+                            <table class="schedule-table table table-dark">
+                                <hr>
+                                <tr>
+                                    <div style="display:flex;justify-content:space-between;padding:3%;"><a
+                                            target="_blank" href="https://goo.gl/maps/zri1RHjY6CrQkbhDA"
+                                            title="Click Me To View The Location">
+                                            <p class="text-dark fs-4 fw-bold"> <i class="fa-solid fa-location-dot"></i>
+                                                 Hyderabad</p>
+                                        </a>
+                                        <p class="text-dark fs-3">20th & 21st May, 2023<br>Saturday & Sunday<br>10:00AM
+                                            - 8:00PM</p><a target="_blank" href="https://goo.gl/maps/zri1RHjY6CrQkbhDA"
+                                            title="Click Me To View The Location">
+                                            <p class="text-dark fs-3">Metro Convention<br>Airport Road, Aramghar,<br>
+                                                Hyderabad, Telangana 500052
+
+                                            </p>
+                                        </a>
+                                    </div>
+                                </tr>
+                                <hr>
+                                <tr>
+                                    <div style="display:flex;justify-content:space-between;padding:3%;">
+                                        <p class="text-dark fs-4 fw-bold"> <i class="fa-solid fa-location-dot"></i> 
+                                            Kochi</p>
+                                        <p class="text-dark fs-3">2nd & 3rd Sep, 2023</p>
+                                        <p class="text-dark fs-3">CIAL Cochin International Airport Limited Convention Center<br>
+                                            Kochi</p>
+                                    </div>
+                                </tr>
+                                <hr>
+                                <tr>
+                                    <div style="display:flex;justify-content:space-between;padding:3%;">
+                                        <p class="text-dark fs-4 fw-bold"> <i class="fa-solid fa-location-dot"></i> 
+                                            Chennai</p>
+                                        <p class="text-dark fs-3">June, 2023</p>
+                                        <p class="text-dark fs-3">Venue: Coming Soon</p>
+                                    </div>
+                                </tr>
+                                <hr>
+                                <tr>
+                                    <div style="display:flex;justify-content:space-between;padding:3%;">
+                                        <p class="text-dark fs-4 fw-bold"> <i class="fa-solid fa-location-dot"></i> 
+                                            Delhi</p>
+                                        <p class="text-dark fs-3">24th & 25th June, 2023</p>
+                                        <p class="text-dark fs-3">Venue: Coming Soon</p>
+                                    </div>
+                                </tr>
+                                <hr>
+                                <tr>
+                                    <div style="display:flex;justify-content:space-between;padding:3%;">
+                                        <p class="text-dark fs-4 fw-bold"> <i class="fa-solid fa-location-dot"></i> 
+                                            Kolkata</p>
+                                        <p class="text-dark fs-3">8th & 9th July, 2023</p>
+                                        <p class="text-dark fs-3">Venue: Coming Soon</p>
+                                    </div>
+                                </tr>
+                                <hr>
+                                <tr>
+                                    <div style="display:flex;justify-content:space-between;padding:3%;">
+                                        <p class="text-dark fs-4 fw-bold"> <i class="fa-solid fa-location-dot"></i> 
+                                            Bangalore</p>
+                                        <p class="text-dark fs-3">September, 2023</p>
+                                        <p class="text-dark fs-3">Venue: Coming Soon</p>
+                                    </div>
+                                </tr>
+                                <hr>
+                                <tr>
+                                    <div style="display:flex;justify-content:space-between;padding:3%;">
+                                        <p class="text-dark fs-4 fw-bold"><i class="fa-solid fa-location-dot"></i> 
+                                            Mumbai</p>
+                                        <p class="text-dark fs-3">October, 2023</p>
+                                        <p class="text-dark fs-3">Venue: Coming Soon</p>
+                                    </div>
+                                </tr>
+                                <hr>
+                                <tr>
+                                    <div style="display:flex;justify-content:space-between;padding:3%;">
+                                        <p class="text-dark fs-4 fw-bold"><i class="fa-solid fa-location-dot"></i> 
+                                            Ahmedabad</p>
+                                        <p class="text-dark fs-3">October, 2023</p>
+                                        <p class="text-dark fs-3">Venue: Coming Soon</p>
+                                    </div>
+                                </tr>
+                                <hr>
+                                <tr>
+                                    <div style="display:flex;justify-content:space-between;padding:3%;">
+                                        <p class="text-dark fs-4 fw-bold"> <i class="fa-solid fa-location-dot"></i> 
+                                            Jaipur</p>
+                                        <p class="text-dark fs-3">November, 2023</p>
+                                        <p class="text-dark fs-3">Venue: Coming Soon</p>
+                                    </div>
+                                </tr>
+                                <hr>
+                                <tr>
+                                    <div style="display:flex;justify-content:space-between;padding:3%;">
+                                        <p class="text-dark fs-4 fw-bold"> <i class="fa-solid fa-location-dot"></i> 
+                                            Lucknow</p>
+                                        <p class="text-dark fs-3">December, 2023</p>
+                                        <p class="text-dark fs-3">Venue: Coming Soon</p>
+                                    </div>
+                                </tr>
+                                <hr>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="pricing-section section-padding section-bg" id="section_5">
+            <div class="container">
+                <div class="row">
+
+                    <div class="col-lg-8 col-12 mx-auto">
+                        <h2 class="text-center mb-4">Who Exhibits</h2>
+                    </div>
+
+                    <div class="row g-5">
+
+                        <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                            <div class="d-flex">
+                                <i class="about-text-icon bi-capsule"></i>
+                            </div>
+                            <div class="ms-4">
+                                <h3>Health Care</h3>
+                                <p>Health & Wellness, Hospitality.</p>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                            <div class="d-flex">
+                                <i class="about-text-icon bi-tree-fill"></i>
+                            </div>
+                            <div class="ms-4">
+                                <h3>Agri-Dairy</h3>
+                                <p>Agricultural Product, Diary Product.</p>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                            <div class="d-flex">
+                                <i class="about-text-icon bi-person"></i>
+                            </div>
+                            <div class="ms-4">
+                                <h3>Luxury Avenue</h3>
+                                <p>Apparels, Beauty, Gems & Jewellery, International Brands.</p>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                            <div class="d-flex">
+                                <i class="about-text-icon bi-tree-fill"></i>
+                            </div>
+                            <div class="ms-4">
+                                <h3>Transcend</h3>
+                                <p>Aviation, Automobiles, Electric Vehicles, Telecom product, Tourism.</p>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                            <div class="d-flex">
+                                <i class="about-text-icon bi-book-half"></i>
+                            </div>
+                            <div class="ms-4">
+                                <h3>Edutech Infra</h3>
+                                <p>Education, IT Hardware & Infrastructure, IT Software Product.</p>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                            <div class="d-flex">
+                                <i class="about-text-icon bi-cone-striped"></i>
+                            </div>
+                            <div class="ms-4">
+                                <h3>Chem Facta</h3>
+                                <p>Manufacturing, Chemicals, Construction.</p>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                            <div class="d-flex">
+                                <i class="about-text-icon bi-box-seam-fill"></i>
+                            </div>
+                            <div class="ms-4">
+                                <h3>Swift Logistics</h3>
+                                <p>FMGC, Retails, Logistics &courier Services.</p>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                            <div class="d-flex">
+                                <i class="about-text-icon bi-buildings-fill"></i>
+                            </div>
+                            <div class="ms-4">
+                                <h3>Venturecore</h3>
+                                <p>Financial Services, Real-State, Start-ups.</p>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                            <div class="d-flex">
+                                <i class="about-text-icon bi-thermometer-high"></i>
+                            </div>
+                            <div class="ms-4">
+                                <h3>Metaline Petrochem</h3>
+                                <p>Metals, Petrochemicals.</p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+        </section>
+
+        <div style="margin-top: 0px;">
+            <img src="images\Screenshot 2023-03-31 at 12-45-00 Hyderabad Expo.pdf.png"
+                style="margin-left: 7%; width:80%; height: 80%" />
+        </div>
+        <section class="contact-section section-padding" id="section_6">
+            <div class="container">
+                <div class="row">
+
+                    <div class="col-lg-8 col-12 mx-auto">
+                        <h2 class="text-center mb-4">Interested? Let's talk</h2>
+
+                        <nav class="d-flex justify-content-center">
+                            <div class="nav nav-tabs align-items-baseline justify-content-center" id="nav-tab"
+                                role="tablist">
+                                <button class="nav-link active" id="nav-ContactForm-tab" data-bs-toggle="tab"
+                                    data-bs-target="#nav-ContactForm" type="button" role="tab"
+                                    aria-controls="nav-ContactForm" aria-selected="false">
+                                    <h5>Contact Form</h5>
+                                </button>
+
+                                <button class="nav-link" id="nav-ContactMap-tab" data-bs-toggle="tab"
+                                    data-bs-target="#nav-ContactMap" type="button" role="tab"
+                                    aria-controls="nav-ContactMap" aria-selected="false">
+                                    <h5>Google Maps</h5>
+                                </button>
+                            </div>
+                        </nav>
+
+                        <div class="tab-content shadow-lg mt-5" id="nav-tabContent">
+                            <div class="tab-pane fade show active" id="nav-ContactForm" role="tabpanel"
+                                aria-labelledby="nav-ContactForm-tab">
+                                <form class="custom-form contact-form mb-5 mb-lg-0" action="#" role="form">
+                                    <div class="contact-form-body">
+                                        <div class="row">
+                                            <div class="col-lg-6 col-md-6 col-12">
+                                                <input type="text" name="contact-name" id="contact-name"
+                                                    class="form-control" placeholder="Full name" required>
+                                            </div>
+
+                                            <div class="col-lg-6 col-md-6 col-12">
+                                                <input type="email" name="contact-email" id="contact-email"
+                                                    pattern="[^ @]*@[^ @]*" class="form-control"
+                                                    placeholder="Email address" required>
+                                            </div>
+                                        </div>
+
+                                        <input type="text" name="contact-company" id="contact-company"
+                                            class="form-control" placeholder="Company" required>
+
+                                        <textarea name="contact-message" rows="3" class="form-control"
+                                            id="contact-message" placeholder="Message"></textarea>
+
+                                        <div class="col-lg-4 col-md-10 col-8 mx-auto">
+                                            <button type="submit" class="form-control" onmouseover="change(this)"
+                                                onmouseout="revert(this)">Send message</button>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+
+                            <div class="tab-pane fade" id="nav-ContactMap" role="tabpanel"
+                                aria-labelledby="nav-ContactMap-tab">
+                                <iframe
+                                    src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15235.577806939918!2d78.4286477!3d17.320641!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcbbd82b0b47305%3A0x488121d6216a2375!2sMetro%20Convention!5e0!3m2!1sen!2sin!4v1679979449508!5m2!1sen!2sin"
+                                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+                                <!-- You can easily copy the embed code from Google Maps -> Share -> Embed a map // -->
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+    </main>
+
+
+    <footer class="site-footer">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-lg-6 col-12 mb-4 pb-2">
+                    <h5 class="site-footer-title mb-3">Links</h5>
+
+                    <ul class="site-footer-links">
+                        <li class="site-footer-link-item">
+                            <a href="#" class="site-footer-link">Home</a>
+                        </li>
+
+                        <li class="site-footer-link-item">
+                            <a href="#" class="site-footer-link">About</a>
+                        </li>
+
+                        <li class="site-footer-link-item">
+                            <a href="#" class="site-footer-link">Event Floor Plan</a>
+                        </li>
+
+                        <li class="site-footer-link-item">
+                            <a href="#" class="site-footer-link">Expo Calender</a>
+                        </li>
+
+                        <li class="site-footer-link-item">
+                            <a href="#" class="site-footer-link">Who Exhibits</a>
+                        </li>
+
+                        <li class="site-footer-link-item">
+                            <a href="#" class="site-footer-link">Contact</a>
+                        </li>
+                    </ul><br>
+                    <div style="display:flex;gap:5%;"><br><img style="border-radius:35px" width="70px" height="70px"
+                            src="images/logo.png"><img style="border-radius:35px" width="70px" height="70px"
+                            src="images/iman.png"><img style="border-radius:35px" width="70px" height="70px"
+                            src="images/masjid-one-movement.png"></div>
+                </div>
+
+                <div class="col-lg-3 col-md-6 col-12 mb-4 mb-lg-0">
+                    <h5 class="site-footer-title mb-3">Have a Question?</h5>
+
+                    <p class="text-white d-flex mb-1" style="word-spacing: 10px;">
+                        <a href="tel:+91 990-297-9079" class="site-footer-link">
+                            +91 99029 79079
+                        </a>
+                    </p>
+
+                    <p class="text-white d-flex">
+                        <a href="mailto:info@aimdcexpo.com" class="site-footer-link">
+                            info@aimdcexpo.com
+                        </a>
+                    </p>
+                    <p class="text-white d-flex">
+                    <h5 class="site-footer-title mb-3">IT Partner</h5>
+                    <a href="https://fullstackacademy.in/courses-home/" class="site-footer-link">
+                        Full Stack Academy Hyderabad
+                    </a>
+                    </p>
+                </div>
+
+                <div class="col-lg-3 col-md-6 col-11 mb-4 mb-lg-0 mb-md-0">
+                    <h5 class="site-footer-title mb-3">Venue of Hyderabad Expo</h5>
+
+                    <p class="text-white d-flex" style="font-size: medium;">
+                        METRO CONVENTION, <br> #6-3-200,Aramghar, Airport Road, Hyderabad, Telangana 500052
+                    </p>
+
+                    <a class="link-fx-1 color-contrast-higher mt-3" href="https://goo.gl/maps/zri1RHjY6CrQkbhDA">
+                        <span>Our Maps</span>
+                        <svg class="icon" viewBox="0 0 32 32" aria-hidden="true">
+                            <g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round">
+                                <circle cx="16" cy="16" r="15.5"></circle>
+                                <line x1="10" y1="18" x2="16" y2="12"></line>
+                                <line x1="16" y1="12" x2="22" y2="18"></line>
+                            </g>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div style="margin-top: 0px;" class="site-footer-bottom">
+            <div class="container">
+                <div class="row">
+
+                    <div class="col-lg-3 col-12 mt-5">
+                        <p class="copyright-text">Copyright © 2023 Franchise & Dealership Expo</p>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!--
+
+T e m p l a t e M o
+
+-->
+
+    <!-- JAVASCRIPT FILES -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.sticky.js"></script>
+    <script src="js/click-scroll.js"></script>
+    <script src="js/custom.js"></script>
+    <script src="js/jsdelivr-bootstrap.js"></script>
+
+</body>
+
 </html>
